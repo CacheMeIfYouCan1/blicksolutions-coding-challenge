@@ -1,0 +1,98 @@
+
+
+/* CSS for the customgallery*/
+
+.custom-media-gallery {
+    display:flex;
+    gap:20px;
+}
+
+.main-gallery-swiper {
+    height:480px !important;
+    border-radius:5px;
+}
+
+.custom-main-gallery-container{
+    width: 480px !important;
+    height: 480px !important;
+    border-radius:5px;
+
+}
+
+.swiper {
+    margin-left:0px !important;
+}
+
+
+
+.detail-gallery-swiper {
+    margin-top:17.5px;
+    width: 100px;
+    height: 445px;
+    margin-right:0px !important;
+
+}
+
+.main-swiper-thumbnail{
+    width: 480px !important;
+    height: 480px !important;
+    
+}
+
+.detail-swiper-thumbnail{
+    width: 100px !important;
+    height: 100px !important;
+
+}
+
+
+.detail-swiper-thumbnail img{
+  
+    border-radius: 3px;
+}
+
+
+
+.swipe-controls {
+  display: flex;
+  justify-content: center; 
+  gap: 12px; 
+  margin-top: 20px;
+  padding-bottom:20px;
+  position: relative;
+  z-index:20;
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  background-color:transparent;
+  color: black;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
+.custom-swiper-container {
+
+ display:flex;
+ justify-items:center;
+
+}
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
+  stroke:#000000;
+  opacity:1;
+}
+
+.custom-swiper-button-next.swiper-button-disabled svg,
+.custom-swiper-button-prev.swiper-button-disabled svg {
+  stroke: #000000;
+  opacity: 0.3;
+}
+

@@ -1,0 +1,116 @@
+/* CSS for the product card on the right side*/
+
+.custom__product--title {
+    text-align: left;
+    height:30px;
+    font: normal normal 600 25px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+.custom__price--regular {
+    width: 60px;
+    height: 22px;
+
+    /* UI Properties */
+
+    text-align: left;
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #1F47FF;
+
+    opacity: 1;
+}
+
+.custom__price--sale {
+    /*width: 60px;*/
+    height: 22px;
+
+    /* UI Properties */
+
+    text-align: left;
+    font: normal normal 600 18px/22px Montserrat ;
+    letter-spacing: 0px;
+    color: #1F47FF;
+    opacity: 1;
+
+}
+
+.custom__price--regular{
+    /*width: 64px;*/
+    height: 22px;
+    display: none;
+    /* UI Properties */
+    margin-right:20px;
+    text-align: left;
+    text-decoration: line-through;
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+.custom__price--container {
+    height: 22px;
+    display: flex;
+    
+   
+}
+
+.custom__price-item--regular{
+    
+    height: 22px;
+ 
+    /* UI Properties */
+    text-align: left;
+    text-decoration: line-through;
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.custom__price-item{
+
+}
+
+.custom__price-item--sale{
+    width: 64px;
+    height: 22px ;
+    /* UI Properties */
+    padding-left:10px;
+    text-align: left;
+    font: normal normal 600 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #1F47FF;
+    opacity: 1;
+
+}
+
+
+.custom__product--tax{
+    padding-left: 6px;
+    padding-top:6px;
+    height: 13px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 500 10px/13px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+
+.custom__product--description{
+    width: 210px;
+    height: 22px;
+
+    text-align: left;
+    font: normal normal 500 18px/22px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
