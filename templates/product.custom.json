@@ -23,14 +23,21 @@
           "type": "title",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
         },
         "availability_text": {
-           "type": "availability_text",
-           "settings": {}
-            },
+          "type": "availability_text",
+          "settings": {
+            "available_text": "In stock, deliverable in 2-3 days",
+            "sold_out_text": "Out of stock"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -48,10 +55,6 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "share": {
           "type": "share",
@@ -72,7 +75,7 @@
         "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": true,
