@@ -5,6 +5,7 @@
 .custom-media-gallery {
     display:flex;
     gap:20px;
+    margin-right: 0px !important;
 }
 
 .main-gallery-swiper {

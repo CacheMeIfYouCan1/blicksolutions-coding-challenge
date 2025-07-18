@@ -7,6 +7,8 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    margin-top: 18px !important;
+    margin-left: 28px !important;
 }
 
 
@@ -56,8 +58,6 @@
 .custom__price--container {
     height: 22px;
     display: flex;
-    
-   
 }
 
 .custom__price-item--regular{
@@ -71,6 +71,7 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    margin-left: 28px;
 }
 .custom__price-item{
 
@@ -86,7 +87,7 @@
     letter-spacing: 0px;
     color: #1F47FF;
     opacity: 1;
-
+    
 }
 
 
@@ -100,6 +101,7 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    
 }
 
 
@@ -113,4 +115,108 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    margin-left: 28px !important;
+}
+
+.custom__product-available {
+    display:flex;
+    align-items:center;
+    height: 19px;
+   
+}
+
+.custom__product--not-available {
+    display:flex;
+    align-items:center;
+    height: 19px;
+    
+}
+
+.custom__product-available--text {
+    padding-left:10px;
+    text-align: left;
+    font: normal normal medium 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #25A525;
+    opacity: 1;
+
+
+}
+
+.custom__product--not-available--text {
+   
+    padding-left:10px;
+    text-align: left;
+    font: normal normal medium 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: red;
+    opacity: 1;
+
+}
+
+.green-dot {
+    margin-left: 28px;
+    padding-top: 1px;
+    width: 15px;
+    height: 15px;
+    background: #25A525 0% 0% no-repeat padding-box;
+    border: 1px solid #25A525;
+    border-radius: 50%; 
+    opacity: 1;
+    display: inline-block;
+}
+
+.red-dot {
+    margin-left: 28px;
+    padding-top: 1px;
+    width: 15px;
+    height: 15px;
+    background: red 0% 0% no-repeat padding-box;
+    border: 1px solid red;
+    border-radius: 50%; 
+    opacity: 1;
+    display: inline-block;
+}
+
+
+.product-form__submit-custom{
+    width: 424px  !important;
+    height: 52px  !important;
+
+    /* UI Properties */
+
+    margin-left: 28px;
+    font: normal normal 600 18px/22px Montserrat !important;
+    letter-spacing: 0px !important;
+    color: #FFFFFF !important;
+    background: #1F47FF 0% 0% no-repeat padding-box  !important;
+    border-radius: 6px !important;
+    opacity: 1  !important;
+}
+
+.product-form__submit-custom:hover{
+    cursor: pointer;
+    
+}
+
+
+.custom__product-card{
+    
+    width: 475px !important;
+    height: 275px !important;
+    
+    /* UI Properties */
+    margin-top:102.5px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #00000029;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    opacity: 1;
+    
+}
+
+.custom__product-info-wrapper {
+
+
 }
