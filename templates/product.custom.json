@@ -23,27 +23,47 @@
           "type": "title",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
         },
         "availability_text": {
-           "type": "availability_text",
-           "settings": {}
-        },
-         "custom_badge": {
-          "type": "custom_badge",
+          "type": "availability_text",
           "settings": {
-            "image": "",
-            "headline": "Headline",
-            "description": "This is a descriptive text"
-          },
+            "available_text": "In stock, deliverable in 2-3 days",
+            "sold_out_text": "Out of stock"
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "custom_badge": {
+          "type": "custom_badge",
+          "settings": {
+            "headline": "100% Quality",
+            "description": "This is a descriptive text"
+          }
+        },
+        "custom_badge_rrN6ty": {
+          "type": "custom_badge",
+          "settings": {
+            "headline": "Headline",
+            "description": "This is a descriptive text"
+          }
+        },
+        "custom_badge_WC3bc9": {
+          "type": "custom_badge",
+          "settings": {
+            "headline": "Headline",
+            "description": "This is a descriptive text"
           }
         },
         "quantity_selector": {
@@ -56,10 +76,6 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "share": {
           "type": "share",
@@ -76,6 +92,8 @@
         "availability_text",
         "variant_picker",
         "custom_badge",
+        "custom_badge_rrN6ty",
+        "custom_badge_WC3bc9",
         "quantity_selector",
         "buy_buttons",
         "share"
