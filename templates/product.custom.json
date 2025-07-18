@@ -23,19 +23,36 @@
           "type": "title",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
         },
         "availability_text": {
-          "type": "availability_text",
+           "type": "availability_text",
+           "settings": {}
+        },
+         "badge_1": {
+          "type": "badge",
           "settings": {
-            "available_text": "In stock, deliverable in 2-3 days",
-            "sold_out_text": "Out of stock"
+            "image": "",
+            "headline": "Headline",
+            "description": "This is a descriptive text"
+          },
+        },
+        "badge_2": {
+          "type": "badge",
+          "settings": {
+            "image": "",
+            "headline": "Headline",
+            "description": "This is a descriptive text"
+          }
+        },
+        "badge_3": {
+          "type": "badge",
+          "settings": {
+            "image": "",
+            "headline": "Headline",
+            "description": "This is a descriptive text"
           }
         },
         "variant_picker": {
@@ -56,6 +73,10 @@
             "show_gift_card_recipient": false
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -75,7 +96,7 @@
         "share"
       ],
       "settings": {
-        "enable_sticky_info": false,
+        "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": true,
