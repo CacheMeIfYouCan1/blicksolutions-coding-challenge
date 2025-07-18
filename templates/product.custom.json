@@ -31,29 +31,13 @@
            "type": "availability_text",
            "settings": {}
         },
-         "badge_1": {
+         "custom_badge": {
           "type": "custom_badge",
           "settings": {
             "image": "",
             "headline": "Headline",
             "description": "This is a descriptive text"
           },
-        },
-        "badge_2": {
-          "type": "custom_badge",
-          "settings": {
-            "image": "",
-            "headline": "Headline",
-            "description": "This is a descriptive text"
-          }
-        },
-        "badge_3": {
-          "type": "custom_badge",
-          "settings": {
-            "image": "",
-            "headline": "Headline",
-            "description": "This is a descriptive text"
-          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -91,9 +75,7 @@
         "price",
         "availability_text",
         "variant_picker",
-        "badge_1",
-        "badge_2",
-        "badge_3",
+        "custom_badge",
         "quantity_selector",
         "buy_buttons",
         "share"
