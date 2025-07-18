@@ -32,7 +32,7 @@
            "settings": {}
         },
          "badge_1": {
-          "type": "badge",
+          "type": "custom_badge",
           "settings": {
             "image": "",
             "headline": "Headline",
@@ -40,7 +40,7 @@
           },
         },
         "badge_2": {
-          "type": "badge",
+          "type": "custom_badge",
           "settings": {
             "image": "",
             "headline": "Headline",
@@ -48,7 +48,7 @@
           }
         },
         "badge_3": {
-          "type": "badge",
+          "type": "custom_badge",
           "settings": {
             "image": "",
             "headline": "Headline",
