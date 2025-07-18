@@ -56,15 +56,17 @@
         "badge_2": {
           "type": "custom_badge",
           "settings": {
-            "headline": "Headline",
-            "description": "This is a descriptive text"
+            "image": "shopify://shop_images/pae6Cciv.png",
+            "headline": "100% Quality",
+            "description": "Thanks to soft silicone"
           }
         },
         "badge_3": {
           "type": "custom_badge",
           "settings": {
-            "headline": "Headline",
-            "description": "This is a descriptive text"
+            "image": "shopify://shop_images/pae6Cciv.png",
+            "headline": "100% Quality",
+            "description": "Thanks to soft silicone"
           }
         },
         "quantity_selector": {
