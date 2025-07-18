@@ -23,36 +23,19 @@
           "type": "title",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
         },
         "availability_text": {
-           "type": "availability_text",
-           "settings": {}
-        },
-         "badge_1": {
-          "type": "custom_badge",
+          "type": "availability_text",
           "settings": {
-            "image": "",
-            "headline": "Headline",
-            "description": "This is a descriptive text"
-          },
-        },
-        "badge_2": {
-          "type": "custom_badge",
-          "settings": {
-            "image": "",
-            "headline": "Headline",
-            "description": "This is a descriptive text"
-          }
-        },
-        "badge_3": {
-          "type": "custom_badge",
-          "settings": {
-            "image": "",
-            "headline": "Headline",
-            "description": "This is a descriptive text"
+            "available_text": "In stock, deliverable in 2-3 days",
+            "sold_out_text": "Out of stock"
           }
         },
         "variant_picker": {
@@ -60,6 +43,28 @@
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "badge_1": {
+          "type": "custom_badge",
+          "settings": {
+            "image": "shopify://shop_images/pae6Cciv.png",
+            "headline": "100% Quality",
+            "description": "Thanks to soft silicone"
+          }
+        },
+        "badge_2": {
+          "type": "custom_badge",
+          "settings": {
+            "headline": "Headline",
+            "description": "This is a descriptive text"
+          }
+        },
+        "badge_3": {
+          "type": "custom_badge",
+          "settings": {
+            "headline": "Headline",
+            "description": "This is a descriptive text"
           }
         },
         "quantity_selector": {
@@ -72,10 +77,6 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "share": {
           "type": "share",
