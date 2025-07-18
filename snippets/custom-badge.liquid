@@ -2,40 +2,21 @@
   Renders a badge item 
 
   Accepts:
-  - image: {Object} Renders image used for the badge
+  - image: {Object or URL} Renders image used for the badge
   - headline: {String} Renders a header for the badge
   - description: {Text} Renders a text for the description
  
   Usage:
   {% render 'custom-badge', image: image, headline: headline, description: description %}
 {% endcomment %}
-{%- liquid
-  if use_variant
-    assign target = product.selected_or_first_available_variant
-  elsif placeholder
-    assign target = null
-  else
-    assign target = product
-  endif
-
-  assign image = target.compare_at_price
-  assign headline = target.compare_at_price
-  assign description = target.compare_at_price
 
 
-  if target == product and product.price_varies
-    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
-  endif
--%}
 
-{%- unless target == null and placeholder == null -%}
- 
-     <div class="custom-badge">
-      {% if image != blank %}
-        <img src="{{ image | img_url: 'medium' }}" alt="{{ headline }}">
-      {% endif %}
-      <h3>{{ headline }}</h3>
-      <p>{{ description }}</p>
-    </div>
 
-{% endunless %}
+<div class="custom-badge">
+  {% if image %}
+    <img src="{{ image | img_url: 'medium' }}" alt="{{ headline }}">
+  {% endif %}
+  <h3>{{ headline }}</h3>
+  <p>{{ description }}</p>
+</div>
