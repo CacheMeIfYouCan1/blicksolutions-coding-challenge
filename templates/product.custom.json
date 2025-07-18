@@ -91,6 +91,9 @@
         "price",
         "availability_text",
         "variant_picker",
+        "badge_1",
+        "badge_2",
+        "badge_3",
         "quantity_selector",
         "buy_buttons",
         "share"
