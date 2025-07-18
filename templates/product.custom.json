@@ -50,15 +50,15 @@
           "settings": {
             "image": "shopify://shop_images/pae6Cciv.png",
             "headline": "100% Changable",
-            "description": "Description texts for the badges"
+            "description": "Description texts"
           }
         },
         "custom_badge_rrN6ty": {
           "type": "custom_badge",
           "settings": {
             "image": "shopify://shop_images/pae6Cciv.png",
-            "headline": "100% Quality",
-            "description": "Thanks to soft silicone"
+            "headline": "100% Custom",
+            "description": "Headline texts"
           }
         },
         "custom_badge_WC3bc9": {
@@ -66,7 +66,7 @@
           "settings": {
             "image": "shopify://shop_images/user.svg",
             "headline": "100% Individual",
-            "description": "Badge icons too"
+            "description": "Badge icons"
           }
         },
         "quantity_selector": {
