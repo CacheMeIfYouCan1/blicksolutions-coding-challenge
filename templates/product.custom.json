@@ -27,16 +27,16 @@
         "availability_text": {
           "type": "availability_text",
           "settings": {
-            "available_text": "In stock, deliverable in 2-3 days",
+            "available_text": "erhsssdfg",
             "sold_out_text": "Out of stock"
           }
         },
         "custom_badge": {
           "type": "custom_badge",
           "settings": {
-            "image": "shopify://shop_images/pae6Cciv.png",
-            "headline": "100% Changable",
-            "description": "Description texts"
+            "image": "shopify://shop_images/logo-neoric_360x_d80bc3d8-0c85-4beb-94fe-add2ca0b3d4d.png",
+            "headline": "dfgasdg",
+            "description": "sdf"
           }
         },
         "custom_badge_rrN6ty": {
