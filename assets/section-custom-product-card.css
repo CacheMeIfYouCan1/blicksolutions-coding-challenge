@@ -1,0 +1,267 @@
+.custom-product-title {
+  text-align: left;
+  height: 30px;
+  font: 600 25px/30px Montserrat;
+  color: #000;
+  margin-top: 18px !important;
+  margin-left: 20px !important;
+}
+
+.custom-price-regular,
+.custom-price-sale {
+  height: 22px;
+  text-align: left;
+  font: 600 18px/22px Montserrat;
+  color: #1F47FF;
+}
+
+.custom-price-regular {
+  display: none;
+  margin-right: 20px;
+  text-decoration: line-through;
+  color: #000;
+}
+
+.custom-price-container {
+  height: 22px;
+  display: flex;
+}
+
+.custom-price-item-regular {
+  height: 22px;
+  text-align: left;
+  margin-left: 20px !important;
+  text-decoration: line-through;
+  font: 600 18px/22px Montserrat;
+  color: #000;
+}
+
+
+
+.custom-price-item-sale {
+  width: 64px;
+  height: 22px;
+  text-align: left;
+  padding-left:20px;
+  font: 600 18px/22px Montserrat;
+  color: #1F47FF;
+}
+
+.custom-product-tax {
+  padding-left: 6px;
+  padding-top: 6px;
+  height: 13px;
+  text-align: left;
+  font: 500 10px/13px Montserrat;
+  color: #000;
+}
+
+.custom-product-description {
+  height: 22px;
+  text-align: left;
+  font: 500 18px/22px Montserrat;
+  color: #000;
+  margin-left: 20px !important;
+}
+
+.custom-product-available,
+.custom-product-not-available {
+  display: flex;
+  align-items: center;
+  height: 19px;
+}
+
+.custom-product-available-text {
+  padding-left: 10px;
+  text-align: left;
+  font: 500 16px/19px Montserrat;
+  color: #25A525;
+}
+
+.custom-product-not-available-text {
+  padding-left: 10px;
+  text-align: left;
+  font: 500 16px/19px Montserrat;
+  color: red;
+}
+
+.custom-green-dot,
+.custom-red-dot {
+  margin-left: 20px;
+  padding-top: 1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block !important;
+}
+
+.custom-green-dot {
+  background: #25A525;
+  border-color: #25A525;
+}
+
+.custom-red-dot {
+  background: red;
+  border-color: red;
+}
+
+.product-form__submit-custom {
+  width: 424px !important;
+  height: 52px !important;
+  margin-left: 20.5px !important;
+  font: 600 18px/22px Montserrat !important;
+  color: #fff !important;
+  background: #1F47FF !important;
+  border-radius: 6px !important;
+}
+
+.product-form__submit-custom:hover {
+  cursor: pointer;
+}
+
+.custom-product-card {
+  width: 475px !important;
+  height: 275px !important;
+  margin-top: 102.5px;
+  margin-left: 0 !important;
+  background: #fff;
+  box-shadow: 0px 3px 20px #00000029;
+  border: 1px solid #D5D5D5;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .product__title {
+    margin: 0 !important;
+  }
+
+  .custom-product-title {
+    text-align: left;
+    width: 324px !important;
+    font: 600 22px/27px Montserrat;
+    margin-bottom: 0 !important;
+    color: #000;
+  }
+
+  .custom-price-regular,
+  .custom-price-sale {
+    text-align: left;
+    font: 600 16px/19px Montserrat;
+    color: #1F47FF;
+  }
+  
+.custom-price-sale {
+    display:flex;
+    flex-direction: row;
+    align-content: flex-start;
+    text-align: left;
+    font: 600 16px/19px Montserrat;
+    color: #1F47FF;
+  }
+
+
+  .custom-price-container {
+    height: 22px;
+    display: flex;
+    width: 324px !important;
+    margin-top: 23px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .custom-price-item-regular {
+    text-align: left;
+    margin-left: 10px !important;
+    width:57px;
+    text-decoration: line-through;
+    font: 600 16px/19px Montserrat;
+    color: #000;
+
+  }
+
+  .custom-price-item-sale {
+    padding-left: 14px;
+    text-align: left;
+    font: 600 16px/19px Montserrat;
+    color: #1F47FF;
+  }
+
+  .custom-product-tax {
+    padding-left: 14px;
+    padding-top: 5px;
+    height: 13px;
+    text-align: left;
+    font: 500 10px/13px Montserrat;
+    color: #000;
+    margin-bottom: 0 !important;
+  }
+
+  .custom-product-description {
+    width: 324px !important;
+    text-align: left;
+    font: 500 16px/19px Montserrat;
+    color: #000;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .custom-product-available,
+  .custom-product-not-available {
+    width: 324px !important;
+    display: flex !important;
+    align-items: center;
+    height: 19px;
+    margin-top: 21px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .custom-product-available-text {
+    padding-left: 14px;
+    text-align: left;
+    font: 500 16px/19px Montserrat;
+    color: #25A525;
+  }
+
+  .custom-product-not-available-text {
+    padding-left: 14px;
+    text-align: left;
+    font: 500 16px/19px Montserrat;
+    color: red;
+  }
+
+  .custom-green-dot {
+    margin-left: 14px;
+  }
+
+  .custom-red-dot {
+    margin-left: 14px;
+  }
+
+  .custom-product-card {
+    width: 350px !important;
+    height: 275px !important;
+    margin-top: 45px !important;
+    margin-bottom: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 3px 20px #00000029;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+  }
+
+  .product-form__submit-custom {
+    width: 324px !important;
+    height: 52px !important;
+    margin-top: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font: 600 16px/19px Montserrat !important;
+    color: #fff !important;
+    background: #1F47FF !important;
+    border-radius: 6px !important;
+  }
+}

@@ -1,0 +1,85 @@
+.custom-badge-icon {
+  height: 57px;
+  width: 57px;
+  margin-top: 10px;
+}
+
+.custom-badge {
+  display: flex;
+  height: 57px;
+}
+
+.custom-badge-headline {
+  height: 22px !important;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  text-align: left;
+  font: 500 18px/22px Montserrat;
+  color: #000;
+}
+
+.custom-badge-description {
+  height: 22px !important;
+  margin-top: 2px;
+  margin-left: 20px;
+  text-align: left;
+  font: 300 18px/22px Montserrat;
+  color: #383838;
+}
+
+.custom-badge-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1110px;
+}
+
+.custom-badge-wrapper {
+  margin-top: 77px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .custom-badge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .custom-badge-wrapper {
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 60%;
+  }
+
+  .custom-badge {
+    margin-bottom: 29px;
+  }
+
+  .custom-badge-headline {
+    text-align: left;
+    font: 500 16px/19px Montserrat;
+    color: #000;
+  }
+
+  .custom-badge-description {
+    text-align: left;
+    font: 400 16px/19px Montserrat;
+    color: #383838;
+  }
+
+  .custom-badge-icon {
+    height: 48px;
+    width: 48px;
+    margin-top: 10px;
+  }
+}

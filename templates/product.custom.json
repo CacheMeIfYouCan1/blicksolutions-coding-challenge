@@ -10,61 +10,70 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "custom-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "availability_text": {
+          "type": "availability_text",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "available_text": "In stock, deliverable in 2-3 days",
+            "sold_out_text": "Out of stock"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
+        "custom_badge": {
+          "type": "custom_badge",
+          "settings": {
+            "image": "shopify://shop_images/pae6Cciv.png",
+            "headline": "100% Changable",
+            "description": "Description texts"
+          }
+        },
+        "custom_badge_rrN6ty": {
+          "type": "custom_badge",
+          "settings": {
+            "image": "shopify://shop_images/pae6Cciv.png",
+            "headline": "100% Custom",
+            "description": "Headline texts"
+          }
+        },
+        "custom_badge_WC3bc9": {
+          "type": "custom_badge",
+          "settings": {
+            "image": "shopify://shop_images/user.svg",
+            "headline": "100% Individual",
+            "description": "Badge icons"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
+       
+        
       },
       "block_order": [
-        "vendor",
         "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
         "description",
-        "share"
+        "price",
+        "availability_text",
+        "custom_badge",
+        "custom_badge_rrN6ty",
+        "custom_badge_WC3bc9",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,

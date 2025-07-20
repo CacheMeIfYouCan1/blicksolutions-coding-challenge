@@ -1,0 +1,23 @@
+{% comment %}
+  Renders a badge item 
+
+  Accepts:
+  - image: {Object or URL} Renders image used for the badge
+  - headline: {String} Renders a header for the badge
+  - description: {Text} Renders a text for the description
+ 
+  Usage:
+  {% render 'custom-badge', image: image, headline: headline, description: description %}
+{% endcomment %}
+
+
+<div class="custom-badge">
+
+  {% if image %}
+    <img class="custom-badge-icon" src="{{ image | img_url: 'medium' }}" alt="{{ headline }}">
+  {% endif %}
+  <div class="custom-badge-texts">
+      <h3 class="custom-badge-headline">{{ headline }}</h3>
+      <p class="custom-badge-description">{{ description }}</p>
+    </div>
+</div>
