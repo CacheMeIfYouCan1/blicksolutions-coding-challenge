@@ -27,7 +27,7 @@
         "availability_text": {
           "type": "availability_text",
           "settings": {
-            "available_text": "erhsssdfg",
+            "available_text": "In Stock, deliverable in 2-3 days",
             "sold_out_text": "Out of stock"
           }
         },
