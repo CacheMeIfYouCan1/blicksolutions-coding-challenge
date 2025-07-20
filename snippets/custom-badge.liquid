@@ -11,12 +11,13 @@
 {% endcomment %}
 
 
-
-
 <div class="custom-badge">
+
   {% if image %}
-    <img src="{{ image | img_url: 'medium' }}" alt="{{ headline }}">
+    <img class="custom-badge-icon" src="{{ image | img_url: 'medium' }}" alt="{{ headline }}">
   {% endif %}
-  <h3>{{ headline }}</h3>
-  <p>{{ description }}</p>
+  <div class="custom-badge-texts">
+      <h3 class="custom-badge-headline">{{ headline }}</h3>
+      <p class="custom-badge-description">{{ description }}</p>
+    </div>
 </div>

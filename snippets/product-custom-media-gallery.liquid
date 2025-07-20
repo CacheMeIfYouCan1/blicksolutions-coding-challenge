@@ -42,21 +42,9 @@
   endif
 -%}
 
-{% comment %}
-Basic Dual Swiper Media Gallery - Liquid Structure Only
-{% endcomment %}
-
 <div class="custom-media-gallery">
-    {% comment %}
-  Second Swiper - Detail Gallery (vertical, 4 slides at a time) - LEFT SIDE
-  {% endcomment %}
   <div class="swiper detail-gallery-swiper" data-slides-per-view="4" data-direction="vertical">
-
     <div class="swiper-wrapper">
-      
-      {% comment %}
-      Featured media first (if exists)
-      {% endcomment %}
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <div class="swiper-slide main-swiper-thumbnail" data-media-id="{{ featured_media.id }}">
@@ -77,77 +65,9 @@ Basic Dual Swiper Media Gallery - Liquid Structure Only
         </div>
       {%- endif -%}
       
-      {% comment %}
-      All other media
-      {% endcomment %}
       {%- for media in product.media -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-       
-              <div class="swiper-slide detail-swiper-thumbnail" data-media-id="{{ media.id }}">
-                {% render 'custom-product-thumbnail',
-                  media: media,
-                  media_count: media_count,
-                  position: forloop.index,
-                  desktop_layout: section.settings.gallery_layout,
-                  mobile_layout: section.settings.mobile_thumbnails,
-                  loop: section.settings.enable_video_looping,
-                  modal_id: section.id,
-                  xr_button: true,
-                  media_width: media_width,
-                  media_fit: section.settings.media_fit,
-                  constrain_to_viewport: section.settings.constrain_to_viewport,
-                  lazy_load: true
-                %}
-              </div>
-     
-        {%- endunless -%}
-      {%- endfor -%}
-      
-    </div>
-  </div>
-
-  {% comment %}
-  First Swiper - Main Gallery  - RIGHT SIDE
-  {% endcomment %}
-
-  <div class="custom-main-gallery-container">
-  <div class="swiper main-gallery-swiper " data-direction="horizontal">
-      
-
-        
-          <div class="swiper-wrapper custom-main-gallery-container">
-            {% for media in product.media %}
-              <div class="swiper-slide" data-media-id="{{ media.id }}">
-                {% render 'custom-product-thumbnail',
-                  media: media,
-                  media_count: forloop.length,
-                  position: forloop.index,
-                  desktop_layout: section.settings.gallery_layout,
-                  mobile_layout: section.settings.mobile_thumbnails,
-                  loop: section.settings.enable_video_looping,
-                  modal_id: section.id,
-                  xr_button: true,
-                  media_width: media_width,
-                  media_fit: section.settings.media_fit,
-                  constrain_to_viewport: section.settings.constrain_to_viewport,
-                  lazy_load: false
-                %}
-              </div>
-
-              
-            {% endfor %}
-          </div>
-       
-
-  
-
-      
-      {% comment %}
-      All other media
-      {% endcomment %}
-      {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          <div class="swiper-slide" data-media-id="{{ media.id }}">
+          <div class="swiper-slide detail-swiper-thumbnail" data-media-id="{{ media.id }}">
             {% render 'custom-product-thumbnail',
               media: media,
               media_count: media_count,
@@ -165,32 +85,46 @@ Basic Dual Swiper Media Gallery - Liquid Structure Only
           </div>
         {%- endunless -%}
       {%- endfor -%}
-   
     </div>
-
-   
-
-
-         <div class="swipe-controls">
-       <button class="custom-swiper-button-prev">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-        </svg>
-
-        </button>
-
-        <button class="custom-swiper-button-next">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-    </svg>
-
-        </button>
-    </div>
-
   </div>
 
-  
+  <div class="custom-main-gallery-container">
+    <div class="swiper main-gallery-swiper" data-direction="horizontal">
+      <div class="swiper-wrapper">
+        {% for media in product.media %}
+          <div class="swiper-slide" data-media-id="{{ media.id }}">
+            {% render 'custom-product-thumbnail',
+              media: media,
+              media_count: forloop.length,
+              position: forloop.index,
+              desktop_layout: section.settings.gallery_layout,
+              mobile_layout: section.settings.mobile_thumbnails,
+              loop: section.settings.enable_video_looping,
+              modal_id: section.id,
+              xr_button: true,
+              media_width: media_width,
+              media_fit: section.settings.media_fit,
+              constrain_to_viewport: section.settings.constrain_to_viewport,
+              lazy_load: false
+            %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="swipe-controls">
+      <button class="custom-swiper-button-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <button class="custom-swiper-button-next">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="swiper-pagination custom-swiper-pagination"></div>
+  </div>
 </div>
-
-
- 

@@ -1492,3 +1492,38 @@ a.product__text {
     border: none;
   }
 }
+
+.custom-product-container {
+    width: 100vw;
+    display:flex;
+    justify-content:center;
+
+
+
+}
+.custom-product-center {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+
+
+
+}
+
+.custom-product-overview{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .custom-product-overview{
+        margin-left: auto;
+        margin-right: auto;
+        display:flex;
+        flex-direction: column;
+    }
+}

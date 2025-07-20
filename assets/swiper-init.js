@@ -4,25 +4,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!verticalSwiperEl || !horizontalSwiperEl) return;
 
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
   const verticalSwiper = new Swiper(verticalSwiperEl, {
     direction: 'vertical',
     spaceBetween: 15,
     slidesPerView: 4,
     allowTouchMove: true,
     watchOverflow: true,
+    loop: false, 
   });
 
   const horizontalSwiper = new Swiper(horizontalSwiperEl, {
     direction: 'horizontal',
-    slidesPerView: 1,
+    slidesPerView: 'auto',
+    spaceBetween: 7,
+    centeredSlides: true,
     allowTouchMove: true,
     watchOverflow: true,
+    loop: isMobile,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   });
 
   const nextBtn = document.querySelector('.custom-swiper-button-next');
   const prevBtn = document.querySelector('.custom-swiper-button-prev');
 
   function updateButtons() {
+    if (isMobile) return;
+
     const isAtBeginning = verticalSwiper.isBeginning && horizontalSwiper.isBeginning;
     const isAtEnd = verticalSwiper.isEnd && horizontalSwiper.isEnd;
 
