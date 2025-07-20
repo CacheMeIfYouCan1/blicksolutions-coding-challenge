@@ -34,16 +34,16 @@
         "custom_badge": {
           "type": "custom_badge",
           "settings": {
-            "image": "shopify://shop_images/logo-neoric_360x_d80bc3d8-0c85-4beb-94fe-add2ca0b3d4d.png",
-            "headline": "dfgasdg",
-            "description": "sdf"
+            "image": "shopify://shop_images/pae6Cciv.png",
+            "headline": "100% Changable",
+            "description": "Description Texts"
           }
         },
         "custom_badge_rrN6ty": {
           "type": "custom_badge",
           "settings": {
             "image": "shopify://shop_images/pae6Cciv.png",
-            "headline": "1234",
+            "headline": "100% Custom",
             "description": "Headline texts"
           }
         },
