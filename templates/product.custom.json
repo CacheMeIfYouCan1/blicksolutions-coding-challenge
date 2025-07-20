@@ -12,13 +12,6 @@
     "main": {
       "type": "custom-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -38,13 +31,6 @@
             "sold_out_text": "Out of stock"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
         "custom_badge": {
           "type": "custom_badge",
           "settings": {
@@ -57,7 +43,7 @@
           "type": "custom_badge",
           "settings": {
             "image": "shopify://shop_images/pae6Cciv.png",
-            "headline": "100% Custom",
+            "headline": "1234",
             "description": "Headline texts"
           }
         },
@@ -69,37 +55,23 @@
             "description": "Badge icons"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "description",
         "price",
         "availability_text",
-        "variant_picker",
         "custom_badge",
         "custom_badge_rrN6ty",
         "custom_badge_WC3bc9",
-        "quantity_selector",
-        "buy_buttons",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
